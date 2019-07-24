@@ -1,8 +1,6 @@
 - name: Create an ec2 instance
   ec2:
     key_name: "{{ keypair }}"
-    aws_access_key: "AKIAIWV4OLMVAPVDQCUQ"
-    aws_secret_key: "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"
     group: SG1 # security group name
     instance_type: "{{ instance_type}}"
     image: "{{ ami }}"
